@@ -22,8 +22,10 @@ class Item{
     int getEisleNum();
 
     //setters
-    setItemName(std::string newName);
-    setItemPrice(float newPrice);
-    setEisleNum(int newEisle);
+    void setItemName(std::string newName);
+    void setItemPrice(float newPrice);
+    void setEisleNum(int newEisle);
+
+    ~Item();
 };
 #endif
