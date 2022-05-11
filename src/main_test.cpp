@@ -55,6 +55,23 @@ int main()
     }
     if (flag == false)
     {
+        //TESTING SUITE FOR EISLE. NOTE EISLE WILL NEED TO BE CHANGED TO BE AGGREGATION NOT STRING POINTER
+        string items = ["Cream", "";
+        float price = 4.00;
+        int eisle = 2;
+
+        Item i1(name, price, eisle);
+        if (i1.getItemName() != name || i1.getEisleNum() != eisle || i1.getItemPrice() != price){
+            cout << "The name of the item is " << i1.getItemName() << ", its supposed to be " << name << endl;
+            cout << "The price of the item is " << i1.getItemPrice() << ", its supposed to be " << price << endl;
+            cout << "The eisle number of the item is " << i1.getEisleNum() << ", its supposed to be  " << eisle <<  endl;
+            flag = true;
+        }
+        i1.~Item();
+        
+    }
+    if (flag == false)
+    {
         cout << "All test cases passed!" << endl;
     }
     return 0;

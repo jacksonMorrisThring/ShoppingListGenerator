@@ -16,10 +16,12 @@ class Eisle{
 
     //getters
     int getEisleNum();
-    string* getEisleItems();
+    std::string* getEisleItems();
 
     //setters
-    setEisleItem(std::string* newItem);
-    setEisleNum(int newEisle);
+    // void setEisleItem(std::string* newItem);
+    void setEisleNum(int newEisle);
+
+    ~Eisle();
 };
 #endif

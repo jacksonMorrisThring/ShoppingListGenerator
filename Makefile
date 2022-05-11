@@ -1,10 +1,17 @@
-all: main.o 
-	g++ main.o 
-main.o: 
-	g++ -c main.cpp
+all: src/main.o src/cppFiles/item.o src/cppFiles/eisle.o
+	g++ src/main.o src/cppFiles/item.o src/cppFiles/eisle.o
 
-main-test.o:
-	g++ -c main-test.cpp
+test: src/main_test.o src/cppFiles/item.o
+	g++ src/main_test.o src/cppFiles/item.o
+item.o:
+	g++ -c src/cppFiles/item.cpp
+eisle.o:
+	g++ -c src/cppFiles/eisle.cpp
+main.o: 
+	g++ -c src/cppFiles/main.cpp
+
+main_test.o:
+	g++ -c main_test.cpp
 
 main_unit_tests.o:
 	g++ -c main_unit_tests.cpp
