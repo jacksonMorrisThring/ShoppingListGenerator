@@ -4,17 +4,6 @@
 
 This software will use alogirthms of shopping market layouts in your area to generate priced lists that are ordered in the most efficient path through the shops!
 
-## Folder structure
-_src -
-     | _main
-       _headerFiles -
-                     | _...
-       _cppFiles-
-                  | _...
-_Makefile
-_README.md
-.gitignore
-
 ## Table of Contents
 
 - [Installation](#installation)
